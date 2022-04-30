@@ -1,4 +1,5 @@
 import json
+from code.core.exceptions import *
 
 
 class BaseFaci:
@@ -6,8 +7,8 @@ class BaseFaci:
                  temp_gen, pressure_gen, oxygen_gen, water_gen, biomass_gen, pop_gen, money_gen,
                  pop_max: int = 0):
         self.name = name  # translation key, not real name
-        self.description = description  # translation key, not real name
         self.id = faci_id
+        self.description = description  # translation key, not real name
         self.type = faci_type
         self.tier = faci_tier
         self.temp_gen = temp_gen
@@ -64,16 +65,19 @@ class Faci:
 
 
 def json_to_faci(src: dict):
-    t1 = src["data"]
     try:
+        t1 = src["data"]
         t2 = t1["pop_max"]
         return BaseFaci(src["name"], src["description"], src["id"], src["type"], src["tire"],
                         t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
                         t1["biomass_gen"], t1["pop_gen"], t1["money_gen"], t2)
     except KeyError:
+        t1 = src["data"]
         return BaseFaci(src["name"], src["description"], src["id"], src["type"], src["tire"],
                         t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
                         t1["biomass_gen"], t1["pop_gen"], t1["money_gen"])
+    except Exception as e:
+        raise DatapackReadError(e)
 
 
 if __name__ == "__main__":
