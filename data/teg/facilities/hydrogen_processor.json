@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.hydrogen_processor",
+  "id": "hydrogen_processor",
+  "type": "pressure",
+  "tire": 3,
+  "data": {
+    "temp_gen": 10,
+    "pressure_gen": -100,
+    "oxygen_gen": 0,
+    "water_gen": 20,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+	"description": "faci.teg.hydrogen_processor.description"
+}

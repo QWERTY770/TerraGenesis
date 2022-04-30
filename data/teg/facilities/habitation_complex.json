@@ -1,0 +1,17 @@
+{
+  "name": "faci.teg.habitation_complex",
+  "id": "habitation_complex",
+  "type": "population",
+  "tire": 2,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 10,
+    "water_gen": 0,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0,
+    "pop_max": 2500
+  },
+	"description": "faci.teg.habitation_complex.description"
+}

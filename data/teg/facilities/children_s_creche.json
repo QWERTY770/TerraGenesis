@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.children_s_creche",
+  "id": "children_s_creche",
+  "type": "population",
+  "tire": 1,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 0,
+    "water_gen": 0,
+    "biomass_gen": 0,
+    "pop_gen": 10,
+    "money_gen": 0
+  },
+	"description": "faci.teg.children_s_creche.description"
+}

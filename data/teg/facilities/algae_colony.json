@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.algae_colony",
+  "id": "algae_colony",
+  "type": "biomass",
+  "tire": 1,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 0,
+    "water_gen": -4,
+    "biomass_gen": 8,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+	"description": "faci.teg.algae_colony.description"
+}

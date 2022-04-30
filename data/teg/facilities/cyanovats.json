@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.cyanovats",
+  "id": "cyanovats",
+  "type": "oxygen",
+  "tire": 2,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 60,
+    "water_gen": -10,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+	"description": "faci.teg.cyanovats.description"
+}

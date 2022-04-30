@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.solar_shade",
+  "id": "solar_shade",
+  "type": "temperature",
+  "tire": 3,
+  "data": {
+    "temp_gen": -100,
+    "pressure_gen": 0,
+    "oxygen_gen": 0,
+    "water_gen": 0,
+    "biomass_gen": -20,
+    "pop_gen": 0,
+    "money_gen": -5000
+  },
+	"description": "faci.teg.solar_shade.description"
+}

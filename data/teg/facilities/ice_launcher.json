@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.ice_launcher",
+  "id": "ice_launcher",
+  "type": "water",
+  "tire": 3,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": -10,
+    "oxygen_gen": 0,
+    "water_gen": -120,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 3000
+  },
+	"description": "faci.teg.ice_launcher.description"
+}
