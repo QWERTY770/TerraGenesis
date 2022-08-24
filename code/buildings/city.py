@@ -6,10 +6,10 @@ from typing import List
 
 class City:
     def __init__(self, name: str, pos: Coordinate2D, faci_list: List[Faci], effect_list: List[Effect]):
-        self.effect_list = effect_list
         self.name = name
-        self.faci_list = faci_list
         self.pos = pos
+        self.faci_list = faci_list
+        self.effect_list = effect_list
         self.pop = 0
 
     def get_max_facis(self) -> int:

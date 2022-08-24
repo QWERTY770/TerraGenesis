@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.sequestration_plant",
+  "id": "sequestration_plant",
+  "type": "pressure",
+  "tire": 1,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": -4,
+    "oxygen_gen": 0,
+    "water_gen": 0,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+  "description": "faci.teg.sequestration_plant.description"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.biofixture_lab",
+  "id": "biofixture_lab",
+  "type": "pressure",
+  "tire": 2,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": -40,
+    "oxygen_gen": 0,
+    "water_gen": 0,
+    "biomass_gen": 10,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+  "description": "faci.teg.biofixture_lab.description"
+}

@@ -2,12 +2,12 @@ import json
 
 
 class BaseFaci:
-    def __init__(self, name: str, description: str, faci_id: int, faci_type: str, faci_tier: int,
+    def __init__(self, faci_id: int, name: str, description: str, faci_type: str, faci_tier: int,
                  temp_gen, pressure_gen, oxygen_gen, water_gen, biomass_gen, pop_gen, money_gen,
                  pop_max: int = 0):
+        self.id = faci_id
         self.name = name  # translation key, not real name
         self.description = description  # translation key, not real name
-        self.id = faci_id
         self.type = faci_type
         self.tier = faci_tier
         self.temp_gen = temp_gen
@@ -77,7 +77,7 @@ def json_to_faci(src: dict):
 
 
 if __name__ == "__main__":
-    a = json_to_faci(json.loads(open(r"../../data/teg/facilities/heating_cluster.json").read()))
+    a = json_to_faci(json.loads(open(r"../../data/vanilla/facilities/heating_cluster.json").read()))
     b = Faci(a, 2, 5)
     print(b.temp_gen)
     print(b.pressure_gen)

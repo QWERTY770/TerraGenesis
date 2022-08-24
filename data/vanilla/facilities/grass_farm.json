@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.grass_farm",
+  "id": "grass_farm",
+  "type": "biomass",
+  "tire": 2,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 0,
+    "water_gen": -10,
+    "biomass_gen": 40,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+  "description": "faci.teg.grass_farm.description"
+}

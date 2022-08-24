@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.electrolysis_plant",
+  "id": "electrolysis_plant",
+  "type": "water",
+  "tire": 2,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 10,
+    "water_gen": -40,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+  "description": "faci.teg.electrolysis_plant.description"
+}

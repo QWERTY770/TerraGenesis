@@ -1,0 +1,17 @@
+{
+  "name": "faci.teg.habitation_dome",
+  "id": "habitation_dome",
+  "type": "population",
+  "tire": 3,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 0,
+    "water_gen": 20,
+    "biomass_gen": 10,
+    "pop_gen": 0,
+    "money_gen": 0,
+    "pop_max": 50000
+  },
+  "description": "faci.teg.habitation_dome.description"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.borehole",
+  "id": "borehole",
+  "type": "temperature",
+  "tire": 2,
+  "data": {
+    "temp_gen": 60,
+    "pressure_gen": 10,
+    "oxygen_gen": 0,
+    "water_gen": 0,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0
+  },
+  "description": "faci.teg.borehole.description"
+}

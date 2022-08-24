@@ -1,0 +1,16 @@
+{
+  "name": "faci.teg.pocket_mine",
+  "id": "pocket_mine",
+  "type": "pressure",
+  "tire": 3,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 100,
+    "oxygen_gen": 20,
+    "water_gen": 0,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 2000
+  },
+  "description": "faci.teg.pocket_mine.description"
+}

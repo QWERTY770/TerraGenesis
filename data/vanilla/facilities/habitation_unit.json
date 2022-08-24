@@ -1,0 +1,17 @@
+{
+  "name": "faci.teg.habitation_unit",
+  "id": "habitation_unit",
+  "type": "population",
+  "tire": 1,
+  "data": {
+    "temp_gen": 0,
+    "pressure_gen": 0,
+    "oxygen_gen": 0,
+    "water_gen": 0,
+    "biomass_gen": 0,
+    "pop_gen": 0,
+    "money_gen": 0,
+    "pop_max": 100
+  },
+  "description": "faci.teg.habitation_unit.description"
+}
