@@ -1,4 +1,4 @@
-from code.api.coordinate import Coordinate2D
+from code.util.coordinate import Coordinate2D
 from faci import Faci
 from code.events.effect import Effect
 from typing import List
@@ -33,9 +33,4 @@ class City:
         self.effect_list.append(effect)
 
     def tick(self):
-        pass
-
-
-class Post:
-    def __init__(self):
         pass

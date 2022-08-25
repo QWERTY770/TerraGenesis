@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.children_s_creche",
+  "name": "faci.vanilla.children_s_creche",
   "id": "children_s_creche",
   "type": "population",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 10,
     "money_gen": 0
   },
-  "description": "faci.teg.children_s_creche.description"
+  "description": "faci.vanilla.children_s_creche.description"
 }

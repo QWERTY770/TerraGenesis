@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.habitation_complex",
+  "name": "faci.vanilla.habitation_complex",
   "id": "habitation_complex",
   "type": "population",
   "tire": 2,
@@ -13,5 +13,5 @@
     "money_gen": 0,
     "pop_max": 2500
   },
-  "description": "faci.teg.habitation_complex.description"
+  "description": "faci.vanilla.habitation_complex.description"
 }

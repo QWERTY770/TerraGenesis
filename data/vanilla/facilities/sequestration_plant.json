@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.sequestration_plant",
+  "name": "faci.vanilla.sequestration_plant",
   "id": "sequestration_plant",
   "type": "pressure",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.sequestration_plant.description"
+  "description": "faci.vanilla.sequestration_plant.description"
 }

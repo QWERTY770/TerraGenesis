@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.coral_reef",
+  "name": "faci.vanilla.coral_reef",
   "id": "coral_reef",
   "type": "biomass",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 20,
     "money_gen": 4000
   },
-  "description": "faci.teg.coral_reef.description"
+  "description": "faci.vanilla.coral_reef.description"
 }

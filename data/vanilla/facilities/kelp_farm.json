@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.kelp_farm",
+  "name": "faci.vanilla.kelp_farm",
   "id": "kelp_farm",
   "type": "oxygen",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.kelp_farm.description"
+  "description": "faci.vanilla.kelp_farm.description"
 }

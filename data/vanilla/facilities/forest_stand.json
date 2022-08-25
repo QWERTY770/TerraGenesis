@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.forest_stand",
+  "name": "faci.vanilla.forest_stand",
   "id": "forest_stand",
   "type": "biomass",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.forest_stand.description"
+  "description": "faci.vanilla.forest_stand.description"
 }

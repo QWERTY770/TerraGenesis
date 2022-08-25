@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.thermal_dust",
+  "name": "faci.vanilla.thermal_dust",
   "id": "thermal_dust",
   "type": "pressure",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.thermal_dust.description"
+  "description": "faci.vanilla.thermal_dust.description"
 }

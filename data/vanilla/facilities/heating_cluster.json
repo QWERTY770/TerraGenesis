@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.heating_cluster",
+  "name": "faci.vanilla.heating_cluster",
   "id": "heating_cluster",
   "type": "temperature",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.heating_cluster.description"
+  "description": "faci.vanilla.heating_cluster.description"
 }

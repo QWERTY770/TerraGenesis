@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.hydro_generator",
+  "name": "faci.vanilla.hydro_generator",
   "id": "hydro_generator",
   "type": "oxygen",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.hydro_generator.description"
+  "description": "faci.vanilla.hydro_generator.description"
 }

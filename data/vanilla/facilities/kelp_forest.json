@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.kelp_forest",
+  "name": "faci.vanilla.kelp_forest",
   "id": "kelp_forest",
   "type": "biomass",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.kelp_forest.description"
+  "description": "faci.vanilla.kelp_forest.description"
 }

@@ -1,4 +1,5 @@
 import json
+from code.core.data.resource_location import ResourceLocation
 
 
 class BaseFaci:
@@ -19,67 +20,71 @@ class BaseFaci:
         self.money_gen = money_gen
         self.pop_max = pop_max  # max population in it, set to 0 for non-residential buildings
 
+    @classmethod
+    def from_json(cls, src: dict):
+        t1 = src["data"]
+        try:
+            t2 = t1["pop_max"]
+            return cls(src["name"], src["description"], src["id"], src["type"], src["tire"],
+                       t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
+                       t1["biomass_gen"], t1["pop_gen"], t1["money_gen"], t2)
+        except KeyError:
+            return cls(src["name"], src["description"], src["id"], src["type"], src["tire"],
+                       t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
+                       t1["biomass_gen"], t1["pop_gen"], t1["money_gen"])
+
+    @classmethod
+    def from_resource_location(cls, location: ResourceLocation):
+        return cls.from_json(json.loads(location.read()))
+
 
 class Faci:
-    def __init__(self, basefaci: BaseFaci, max_level: int, level: int, cost_multiplier: int = 1):
-        self.basefaci = basefaci
+    def __init__(self, base_faci: BaseFaci, max_level: int, level: int, cost_multiplier: int = 1):
+        self.base_faci = base_faci
         self.max_level = max_level
         self.level = level
         self.cost_multiplier = cost_multiplier
 
     def get_maintenance_cost(self):
-        return self.basefaci.tier * self.level * 500 * self.cost_multiplier
+        return self.base_faci.tier * self.level * 500 * self.cost_multiplier
 
     @property
     def temp_gen(self):
-        return self.basefaci.temp_gen * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.temp_gen * (1 + (self.level - 1) * 0.5)
 
     @property
     def pressure_gen(self):
-        return self.basefaci.pressure_gen * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.pressure_gen * (1 + (self.level - 1) * 0.5)
 
     @property
     def oxygen_gen(self):
-        return self.basefaci.oxygen_gen * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.oxygen_gen * (1 + (self.level - 1) * 0.5)
 
     @property
     def water_gen(self):
-        return self.basefaci.water_gen * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.water_gen * (1 + (self.level - 1) * 0.5)
 
     @property
     def biomass_gen(self):
-        return self.basefaci.biomass_gen * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.biomass_gen * (1 + (self.level - 1) * 0.5)
 
     @property
     def pop_gen(self):
-        return self.basefaci.pop_gen * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.pop_gen * (1 + (self.level - 1) * 0.5)
 
     @property
     def pop_max(self):
-        return self.basefaci.pop_max * (1 + (self.level - 1) * 0.5)
+        return self.base_faci.pop_max * (1 + (self.level - 1) * 0.5)
 
     @property
     def money_gen(self):
-        return self.basefaci.money_gen * (1 + (self.level - 1) * 0.5)
-
-
-def json_to_faci(src: dict):
-    t1 = src["data"]
-    try:
-        t2 = t1["pop_max"]
-        return BaseFaci(src["name"], src["description"], src["id"], src["type"], src["tire"],
-                        t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
-                        t1["biomass_gen"], t1["pop_gen"], t1["money_gen"], t2)
-    except KeyError:
-        return BaseFaci(src["name"], src["description"], src["id"], src["type"], src["tire"],
-                        t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
-                        t1["biomass_gen"], t1["pop_gen"], t1["money_gen"])
+        return self.base_faci.money_gen * (1 + (self.level - 1) * 0.5)
 
 
 if __name__ == "__main__":
-    a = json_to_faci(json.loads(open(r"../../data/vanilla/facilities/heating_cluster.json").read()))
+    a = BaseFaci.from_json(json.loads(open(r"../../data/vanilla/facilities/heating_cluster.json").read()))
     b = Faci(a, 2, 5)
     print(b.temp_gen)
     print(b.pressure_gen)
     print(b.get_maintenance_cost())
-    print(b.basefaci.description)
+    print(b.base_faci.description)

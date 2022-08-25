@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.orbital_mirror",
+  "name": "faci.vanilla.orbital_mirror",
   "id": "orbital_mirror",
   "type": "temperature",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.orbital_mirror.description"
+  "description": "faci.vanilla.orbital_mirror.description"
 }

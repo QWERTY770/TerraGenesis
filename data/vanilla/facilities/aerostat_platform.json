@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.aerostat_platform",
+  "name": "faci.vanilla.aerostat_platform",
   "id": "aerostat_platform",
   "type": "temperature",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 3000
   },
-  "description": "faci.teg.aerostat_platform.description"
+  "description": "faci.vanilla.aerostat_platform.description"
 }

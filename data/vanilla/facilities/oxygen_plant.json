@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.oxygen_plant",
+  "name": "faci.vanilla.oxygen_plant",
   "id": "oxygen_plant",
   "type": "oxygen",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.oxygen_plant.description"
+  "description": "faci.vanilla.oxygen_plant.description"
 }

@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.oxygen_filter",
+  "name": "faci.vanilla.oxygen_filter",
   "id": "oxygen_filter",
   "type": "oxygen",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.oxygen_filter.description"
+  "description": "faci.vanilla.oxygen_filter.description"
 }

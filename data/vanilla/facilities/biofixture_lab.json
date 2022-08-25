@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.biofixture_lab",
+  "name": "faci.vanilla.biofixture_lab",
   "id": "biofixture_lab",
   "type": "pressure",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.biofixture_lab.description"
+  "description": "faci.vanilla.biofixture_lab.description"
 }

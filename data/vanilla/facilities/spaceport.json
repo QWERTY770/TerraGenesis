@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.spaceport",
+  "name": "faci.vanilla.spaceport",
   "id": "spaceport",
   "type": "population",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 120,
     "money_gen": 10000
   },
-  "description": "faci.teg.spaceport.description"
+  "description": "faci.vanilla.spaceport.description"
 }

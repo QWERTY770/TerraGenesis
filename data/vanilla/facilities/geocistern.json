@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.geocistern",
+  "name": "faci.vanilla.geocistern",
   "id": "geocistern",
   "type": "water",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.geocistern.description"
+  "description": "faci.vanilla.geocistern.description"
 }

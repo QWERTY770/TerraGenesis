@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.cloud_seeder",
+  "name": "faci.vanilla.cloud_seeder",
   "id": "cloud_seeder",
   "type": "water",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.cloud_seeder.description"
+  "description": "faci.vanilla.cloud_seeder.description"
 }

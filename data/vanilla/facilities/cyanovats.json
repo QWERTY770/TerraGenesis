@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.cyanovats",
+  "name": "faci.vanilla.cyanovats",
   "id": "cyanovats",
   "type": "oxygen",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.cyanovats.description"
+  "description": "faci.vanilla.cyanovats.description"
 }

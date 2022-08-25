@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.atmogen_suite",
+  "name": "faci.vanilla.atmogen_suite",
   "id": "atmogen_suite",
   "type": "pressure",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.atmogen_suite.description"
+  "description": "faci.vanilla.atmogen_suite.description"
 }

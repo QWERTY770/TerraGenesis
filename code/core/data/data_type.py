@@ -20,7 +20,7 @@ class RandomIntData(NumberData):
 
     def get_value(self):
         self.value = random.randint(self.min, self.max)
-        return self.value
+        return super(RandomIntData, self).get_value()
 
 
 class RandomFloatData(NumberData):
@@ -31,4 +31,4 @@ class RandomFloatData(NumberData):
 
     def get_value(self):
         self.value = random.uniform(self.min, self.max)
-        return self.value
+        return super(RandomFloatData, self).get_value()

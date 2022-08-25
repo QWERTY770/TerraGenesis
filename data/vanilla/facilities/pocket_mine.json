@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.pocket_mine",
+  "name": "faci.vanilla.pocket_mine",
   "id": "pocket_mine",
   "type": "pressure",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 2000
   },
-  "description": "faci.teg.pocket_mine.description"
+  "description": "faci.vanilla.pocket_mine.description"
 }

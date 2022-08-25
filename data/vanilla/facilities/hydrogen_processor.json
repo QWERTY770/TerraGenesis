@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.hydrogen_processor",
+  "name": "faci.vanilla.hydrogen_processor",
   "id": "hydrogen_processor",
   "type": "pressure",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.hydrogen_processor.description"
+  "description": "faci.vanilla.hydrogen_processor.description"
 }

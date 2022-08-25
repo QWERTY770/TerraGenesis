@@ -35,7 +35,3 @@ class Event:
         if choices_and_effects is None:
             choices_and_effects = {"message.main.buttons.confirm": empty}
         self.choices_and_effects = choices_and_effects
-
-
-event_rising_star = Event(1, "event.vanilla.rising_star", "event.vanilla.rising_star.description",
-                          {"message.vanilla.buttons.broadcast": (lambda city: add_effect(city, Effect()))})

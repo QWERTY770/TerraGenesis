@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.carbon_fixer",
+  "name": "faci.vanilla.carbon_fixer",
   "id": "carbon_fixer",
   "type": "oxygen",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.carbon_fixer.description"
+  "description": "faci.vanilla.carbon_fixer.description"
 }

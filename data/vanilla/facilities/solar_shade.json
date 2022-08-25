@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.solar_shade",
+  "name": "faci.vanilla.solar_shade",
   "id": "solar_shade",
   "type": "temperature",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": -5000
   },
-  "description": "faci.teg.solar_shade.description"
+  "description": "faci.vanilla.solar_shade.description"
 }

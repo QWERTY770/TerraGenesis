@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.grass_farm",
+  "name": "faci.vanilla.grass_farm",
   "id": "grass_farm",
   "type": "biomass",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.grass_farm.description"
+  "description": "faci.vanilla.grass_farm.description"
 }

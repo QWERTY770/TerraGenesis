@@ -1,0 +1,6 @@
+{
+    "name": "event.vanilla.building_the_future",
+    "id": "building_the_future",
+    "description": "event.vanilla.building_the_future.description",
+    "choices_and_effects": "pass"
+}

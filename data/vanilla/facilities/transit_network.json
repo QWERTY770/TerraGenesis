@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.transit_network",
+  "name": "faci.vanilla.transit_network",
   "id": "transit_network",
   "type": "population",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 80,
     "money_gen": 0
   },
-  "description": "faci.teg.transit_network.description"
+  "description": "faci.vanilla.transit_network.description"
 }

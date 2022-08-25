@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.cooling_plant",
+  "name": "faci.vanilla.cooling_plant",
   "id": "cooling_plant",
   "type": "temperature",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.cooling_plant.description"
+  "description": "faci.vanilla.cooling_plant.description"
 }

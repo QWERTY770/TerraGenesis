@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.ice_launcher",
+  "name": "faci.vanilla.ice_launcher",
   "id": "ice_launcher",
   "type": "water",
   "tire": 3,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 3000
   },
-  "description": "faci.teg.ice_launcher.description"
+  "description": "faci.vanilla.ice_launcher.description"
 }

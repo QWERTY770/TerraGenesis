@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.algae_colony",
+  "name": "faci.vanilla.algae_colony",
   "id": "algae_colony",
   "type": "biomass",
   "tire": 1,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.algae_colony.description"
+  "description": "faci.vanilla.algae_colony.description"
 }

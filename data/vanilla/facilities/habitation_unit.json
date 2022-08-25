@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.habitation_unit",
+  "name": "faci.vanilla.habitation_unit",
   "id": "habitation_unit",
   "type": "population",
   "tire": 1,
@@ -13,5 +13,5 @@
     "money_gen": 0,
     "pop_max": 100
   },
-  "description": "faci.teg.habitation_unit.description"
+  "description": "faci.vanilla.habitation_unit.description"
 }

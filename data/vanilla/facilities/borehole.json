@@ -1,5 +1,5 @@
 {
-  "name": "faci.teg.borehole",
+  "name": "faci.vanilla.borehole",
   "id": "borehole",
   "type": "temperature",
   "tire": 2,
@@ -12,5 +12,5 @@
     "pop_gen": 0,
     "money_gen": 0
   },
-  "description": "faci.teg.borehole.description"
+  "description": "faci.vanilla.borehole.description"
 }
