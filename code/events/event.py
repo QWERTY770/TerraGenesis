@@ -1,4 +1,4 @@
-from typing import Optional, Dict
+from typing import Dict, List
 from types import FunctionType
 from effect import Effect
 from code.buildings.city import City
@@ -28,10 +28,8 @@ def add_effect(city: City, effect: Effect):
 
 class Event:
     def __init__(self, event_id: int, name: str, description: str,
-                 choices_and_effects: Optional[Dict[str, FunctionType]]):
+                 choices_and_results: List[Dict[str, FunctionType]]):
         self.id = event_id
         self.name = name
         self.description = description
-        if choices_and_effects is None:
-            choices_and_effects = {"message.main.buttons.confirm": empty}
-        self.choices_and_effects = choices_and_effects
+        self.choices_and_results = choices_and_results

@@ -1,5 +1,4 @@
 import json
-from code.core.data.resource_location import ResourceLocation
 
 
 class BaseFaci:
@@ -32,10 +31,6 @@ class BaseFaci:
             return cls(src["name"], src["description"], src["id"], src["type"], src["tire"],
                        t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
                        t1["biomass_gen"], t1["pop_gen"], t1["money_gen"])
-
-    @classmethod
-    def from_resource_location(cls, location: ResourceLocation):
-        return cls.from_json(json.loads(location.read()))
 
 
 class Faci:
@@ -82,7 +77,7 @@ class Faci:
 
 
 if __name__ == "__main__":
-    a = BaseFaci.from_json(json.loads(open(r"../../data/vanilla/facilities/heating_cluster.json").read()))
+    a = BaseFaci.from_json(json.loads(open(r"../../resources/data/vanilla/facilities/heating_cluster.json").read()))
     b = Faci(a, 2, 5)
     print(b.temp_gen)
     print(b.pressure_gen)
