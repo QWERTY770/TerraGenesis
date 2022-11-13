@@ -1,9 +1,10 @@
 from typing import Dict, List
 from types import FunctionType
 from effect import Effect
-from code.buildings.city import City
+from src.buildings.city import City
 from random import sample, randint
-from code.core.exceptions import *
+
+from src.core.exceptions import *
 
 
 def empty():

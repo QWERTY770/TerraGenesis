@@ -1,8 +1,9 @@
 import json
+import os
 
 
 class BaseFaci:
-    def __init__(self, faci_id: int, name: str, description: str, faci_type: str, faci_tier: int,
+    def __init__(self, faci_id: str, name: str, description: str, faci_type: str, faci_tier: int,
                  temp_gen, pressure_gen, oxygen_gen, water_gen, biomass_gen, pop_gen, money_gen,
                  pop_max: int = 0):
         self.id = faci_id
@@ -24,11 +25,11 @@ class BaseFaci:
         t1 = src["data"]
         try:
             t2 = t1["pop_max"]
-            return cls(src["name"], src["description"], src["id"], src["type"], src["tire"],
+            return cls(src["id"], src["name"], src["description"], src["type"], src["tire"],
                        t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
                        t1["biomass_gen"], t1["pop_gen"], t1["money_gen"], t2)
         except KeyError:
-            return cls(src["name"], src["description"], src["id"], src["type"], src["tire"],
+            return cls(src["id"], src["name"], src["description"], src["type"], src["tire"],
                        t1["temp_gen"], t1["pressure_gen"], t1["oxygen_gen"], t1["water_gen"],
                        t1["biomass_gen"], t1["pop_gen"], t1["money_gen"])
 
@@ -77,7 +78,8 @@ class Faci:
 
 
 if __name__ == "__main__":
-    a = BaseFaci.from_json(json.loads(open(r"../../resources/data/vanilla/facilities/heating_cluster.json").read()))
+    a = BaseFaci.from_json(json.loads(open(
+        r"../../resources/data/vanilla/facilities_deprecated/heating_cluster.json").read()))
     b = Faci(a, 2, 5)
     print(b.temp_gen)
     print(b.pressure_gen)

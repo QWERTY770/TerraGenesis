@@ -1,6 +1,6 @@
-from code.util.coordinate import Coordinate2D
+from src.util.coordinate import Coordinate2D
 from faci import Faci
-from code.events.effect import Effect
+from src.events.effect import Effect
 from typing import List
 
 

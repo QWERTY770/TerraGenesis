@@ -1,7 +1,13 @@
+from typing import List
+
+from src.buildings.city import City
+from src.buildings.outpost import Outpost
+
+
 class Planet:
     def __init__(self,
                  name: str, temperature: float, pressure: float, oxygen: float, water: float, biomass: float,
-                 population: int, cities: List[City] = None, posts: List[Post] = None
+                 population: int, cities: List[City] = None, posts: List[Outpost] = None
                  ):
         self.posts = posts
         self.population = population

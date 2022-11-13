@@ -1,6 +1,6 @@
 {
-  "name": "faci.vanilla.electrolysis_plant",
-  "id": "electrolysis_plant",
+  "name": "faci.vanilla.aquifer_network",
+  "id": "aquifer_network",
   "type": "water",
   "tire": 2,
   "data": {
