@@ -24,6 +24,15 @@ class BasePlanet:
             self.cities = []
         if posts is None:
             self.posts = []
+    
+    def get_sea_level(self) -> float:
+        rxn = 300000
+        if self.temperature < 200500 or self.temperature > 399500 or self.pressure < 600:
+            return -1.0
+        elif 200500 <= self.temperature <= rxn:
+            return (rxn - self.temperature) / (rxn - 200500) * self.water
+        else:
+            return (self.temperature - rxn) / (rxn - 200500) * self.water
 
     def get_diff(self) -> List[float]:
         diff = []
