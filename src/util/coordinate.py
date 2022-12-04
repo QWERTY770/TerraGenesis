@@ -19,6 +19,9 @@ class Coordinate2D:
     def get_distance(self, other) -> float:
         return (abs(self.x - other.x) + abs(self.y + other.y)) ** 0.5
 
+    def as_list(self) -> list:
+        return [self.x, self.y]
+
     def __str__(self):
         return f"({self.x}, {self.y})"
 
@@ -28,10 +31,5 @@ class Coordinate2D:
     def __ne__(self, other):
         return not self == other
 
-    def __getitem__(self, item):
-        if item == 0:
-            return self.x
-        elif item == 1:
-            return self.y
-        else:
-            return -1
+    def __iter__(self):
+        return self.as_list()
