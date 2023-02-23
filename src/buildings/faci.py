@@ -18,6 +18,7 @@ class BaseFaci:
         self.pop_gen = pop_gen
         self.money_gen = money_gen
         self.pop_limit = pop_limit  # max population in it, set to 0 for non-residential buildings
+        self.namespace = "default"  # this should be set later
 
     @classmethod
     def from_json(cls, src: dict):
