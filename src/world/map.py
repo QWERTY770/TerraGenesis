@@ -17,11 +17,11 @@ class HeightMap:
         gray_map = 0.2989 * orig_map[:, :, 0] + 0.587 * orig_map[:, :, 1] + 0.114 * orig_map[:, :, 2]
         return HeightMap(gray_map.astype(np.uint8))
 
-    def height_at(self, pos: Coordinate2D) -> float:
+    def get_height_at(self, pos: Coordinate2D) -> int:
         try:
             return self.array[pos.x, pos.y]
         except IndexError:
-            return -1.0
+            return -1
 
     def size(self) -> Tuple[int, int]:
         rows = len(self.array)

@@ -1,7 +1,7 @@
 from src.buildings.faci import BaseFaci
-from src.registry.registry import Registry, FACI_REGISTRY
+from src.registry.registry import Registry
 
-facilities = Registry(FACI_REGISTRY, "vanilla")
+facilities = Registry[BaseFaci]("vanilla")
 
 AEROSTAT_PLATFORM = facilities.register(BaseFaci("aerostat_platform", "faci.vanilla.aerostat_platform", "faci.vanilla.aerostat_platform.description", "temperature", 2, -40, 0, 0, 0, 0, 0, 3000, 0))
 ALGAE_COLONY = facilities.register(BaseFaci("algae_colony", "faci.vanilla.algae_colony", "faci.vanilla.algae_colony.description", "biomass", 1, 0, 0, 0, -4, 8, 0, 0, 0))
