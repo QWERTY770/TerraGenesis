@@ -1,7 +1,14 @@
 from typing import TypeVar, Generic, List
 
 
-T = TypeVar("T")
+class HasID:
+    """Registry objects need to extend this"""
+
+    def __init__(self, obj_id):
+        self.id = obj_id
+
+
+T = TypeVar("T", bound=HasID)
 
 
 class Registry(Generic[T]):
@@ -14,3 +21,9 @@ class Registry(Generic[T]):
         obj.namespace = self.namespace
         self.registry_list.append(obj)
         return obj
+
+    def get_obj_by_id(self, obj_id):
+        for i in self.registry_list:
+            if i.id == obj_id:
+                return i
+        return -1

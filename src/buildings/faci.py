@@ -1,11 +1,13 @@
 import json
 
+from src.registry.registry import HasID
 
-class BaseFaci:
+
+class BaseFaci(HasID):
     def __init__(self, faci_id: str, name: str, description: str, faci_type: str, faci_tier: int,
                  temp_gen, pressure_gen, oxygen_gen, water_gen, biomass_gen, pop_gen, money_gen,
                  pop_limit: int = 0):
-        self.id = faci_id
+        super().__init__(faci_id)
         self.name = name  # translation key, not real name
         self.description = description  # translation key, not real name
         self.type = faci_type
